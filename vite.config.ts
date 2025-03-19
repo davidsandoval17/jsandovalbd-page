@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-import path from 'node:path'
+import path from 'node:path';
 
-const root = path.resolve(__dirname, 'src')
+const root = path.resolve(__dirname, 'src');
 
 export default defineConfig({
   base: '/jsandovalbd-page/',
@@ -44,7 +44,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": root
-    }
-  }
+      '@': root,
+    },
+  },
 });

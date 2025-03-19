@@ -27,10 +27,7 @@ const BannerMain = () => {
       <Container>
         <Row className='align-items-center g-5'>
           <Col lg={6} className='text-center text-lg-start'>
-            <Tag
-              label={t('bannerMain.title.tag')}
-              size='sm'
-            />
+            <Tag label={t('bannerMain.title.tag')} size='sm' />
             <Typography
               as='h1'
               size='4xl'
@@ -57,12 +54,8 @@ const BannerMain = () => {
                 />
               </Typography>
             </Typography>
-            <Typography>
-              {t('bannerMain.paragraph')}
-            </Typography>
-            <div
-              className='mt-5 d-flex flex-column gap-3 flex-sm-row justify-content-center justify-content-lg-start'
-            >
+            <Typography>{t('bannerMain.paragraph')}</Typography>
+            <div className='mt-5 d-flex flex-column gap-3 flex-sm-row justify-content-center justify-content-lg-start'>
               <Button
                 as='a'
                 href={`mailto:${configContact.gmail}`}
@@ -73,7 +66,13 @@ const BannerMain = () => {
               >
                 {t('bannerMain.button')} <SiGmail />
               </Button>
-              <Button as='a' variant='outlined' className='rounded-pill'  href='pdf/cv-david-sandoval-2023.pdf' target='_blank'>
+              <Button
+                as='a'
+                variant='outlined'
+                className='rounded-pill'
+                href='pdf/cv-david-sandoval-2023.pdf'
+                target='_blank'
+              >
                 <HiOutlineDocumentText /> Curriculum
               </Button>
             </div>

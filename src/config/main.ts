@@ -13,21 +13,21 @@ const configMain = {
   worksSlider: [
     {
       id: 'work-1',
-      img: projectAdara
+      img: projectAdara,
     },
     {
       id: 'work-2',
-      img: projectBernardo
+      img: projectBernardo,
     },
     {
       id: 'work-3',
-      img: projectSweetFruit
+      img: projectSweetFruit,
     },
     {
       id: 'work-4',
-      img: projectAgroclub
-    }
-  ]
+      img: projectAgroclub,
+    },
+  ],
 };
 
 export default configMain;

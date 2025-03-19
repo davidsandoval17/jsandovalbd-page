@@ -30,7 +30,7 @@ export const getFontWeight = (weight: FontWeight = 'normal') =>
     semibold: css`
       font-weight: 600;
     `,
-  }[weight]);
+  })[weight];
 
 export const getSize = (size: TextSize = 'base') =>
   ({
@@ -97,7 +97,7 @@ export const getSize = (size: TextSize = 'base') =>
         line-height: 3rem;
       }
     `,
-  }[size]);
+  })[size];
 
 const Typography = styled.p<TypographyProps>`
   margin-bottom: 0;

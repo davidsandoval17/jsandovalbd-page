@@ -16,7 +16,7 @@ type ButtonProps = {
 const variantStyles = (
   theme: DefaultTheme,
   variant: VariantButton = 'text',
-  color: Color = 'primary'
+  color: Color = 'primary',
 ) =>
   ({
     contained: css`
@@ -39,7 +39,7 @@ const variantStyles = (
       }
     `,
     text: css``,
-  }[variant]);
+  })[variant];
 
 const sizeStyles = (size: SizeButton = 'md') =>
   ({
@@ -61,7 +61,7 @@ const sizeStyles = (size: SizeButton = 'md') =>
     icon: css`
       padding: 0.5rem;
     `,
-  }[size]);
+  })[size];
 
 export default styled.button<ButtonProps>`
   border-style: none;

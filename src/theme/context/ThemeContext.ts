@@ -8,7 +8,7 @@ export type ThemeContextState = {
 };
 
 export const ThemeContext = createContext<ThemeContextState | undefined>(
-  undefined
+  undefined,
 );
 
 export const useTheme = () => useContext(ThemeContext) as ThemeContextState;
