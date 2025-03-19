@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { TRANSITIONS } from '@theme';
-import { getSize } from '@components/display-data/Typography';
+import { TRANSITIONS } from '@/theme';
+import { getSize } from '@/components/display-data/Typography';
 
 const TRANSITION_COMMON = TRANSITIONS.base;
 

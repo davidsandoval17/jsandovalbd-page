@@ -4,7 +4,7 @@ import {
   Button,
   Typography,
   VscLinkExternal,
-} from '@components';
+} from '@/components';
 
 import { CardExcerpt, CardImage, CardInfo, CardWrapper } from './styled';
 import { useTranslation } from 'react-i18next';

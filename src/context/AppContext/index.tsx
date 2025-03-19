@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useContext } from 'react';
-import { useToggle } from '@hooks';
+import { useToggle } from '@/hooks';
 
 type AppStore = {
   openNav: boolean;

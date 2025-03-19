@@ -1,5 +1,5 @@
 import styled, { useTheme } from 'styled-components';
-import configMain from '@config/main';
+import configMain from '@/config/main';
 
 const LogoThemeContent = styled.a`
   display: inline-block;

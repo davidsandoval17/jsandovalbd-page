@@ -5,7 +5,7 @@ import {
   SocialNetworks,
   LogoTheme,
   Typography,
-} from '@components';
+} from '@/components';
 import { useTranslation } from 'react-i18next';
 import { FooterBackground } from './styled';
 

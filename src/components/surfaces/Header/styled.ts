@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { MEDIA_BREAKPOINTS, TRANSITIONS, Z_INDEX_HEADER } from '@theme';
+import { MEDIA_BREAKPOINTS, TRANSITIONS, Z_INDEX_HEADER } from '@/theme';
 import { rgba } from 'polished';
 
 export const HeaderButtons = styled.div`

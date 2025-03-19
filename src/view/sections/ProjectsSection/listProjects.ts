@@ -1,15 +1,15 @@
-import sweetFruitMockup from '@assets/img/projects/sweetfruit-mockup.png';
-import sweetFruitThumb from '@assets/img/projects/sweetfruit-thumbnail.jpg';
-import bernardoMockup from '@assets/img/projects/bernardo-mockup.png';
-import bernardoThumb from '@assets/img/projects/bernardo-thumbnail.jpg';
-import sweetFruitLandingMockup from '@assets/img/projects/sweetfruit-landing-mockup.png';
-import sweetFruitLandingThumb from '@assets/img/projects/sweetfruit-landing-thumbnail.jpg';
-import agroclubMockup from '@assets/img/projects/agroclub-mockup.png';
-import agroclubThumb from '@assets/img/projects/agroclub-thumbnail.jpg';
-import adaraMockup from '@assets/img/projects/adara-mockup.png';
-import adaraThumb from '@assets/img/projects/adara-thumbnail.jpg';
-import carussoMockup from '@assets/img/projects/carusso-mockup.png';
-import carussoThumb from '@assets/img/projects/carusso-thumbnail.jpg';
+import sweetFruitMockup from '@/assets/img/projects/sweetfruit-mockup.png';
+import sweetFruitThumb from '@/assets/img/projects/sweetfruit-thumbnail.jpg';
+import bernardoMockup from '@/assets/img/projects/bernardo-mockup.png';
+import bernardoThumb from '@/assets/img/projects/bernardo-thumbnail.jpg';
+import sweetFruitLandingMockup from '@/assets/img/projects/sweetfruit-landing-mockup.png';
+import sweetFruitLandingThumb from '@/assets/img/projects/sweetfruit-landing-thumbnail.jpg';
+import agroclubMockup from '@/assets/img/projects/agroclub-mockup.png';
+import agroclubThumb from '@/assets/img/projects/agroclub-thumbnail.jpg';
+import adaraMockup from '@/assets/img/projects/adara-mockup.png';
+import adaraThumb from '@/assets/img/projects/adara-thumbnail.jpg';
+import carussoMockup from '@/assets/img/projects/carusso-mockup.png';
+import carussoThumb from '@/assets/img/projects/carusso-thumbnail.jpg';
 
 export default [
   {

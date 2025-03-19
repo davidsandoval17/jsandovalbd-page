@@ -1,4 +1,4 @@
-import { ButtonScrollTop, Footer, Header } from '@components';
+import { ButtonScrollTop, Footer, Header } from '@/components';
 import { Fragment, ReactNode } from 'react';
 
 const DefaultLayout = ({ children }: { children: ReactNode }) => {

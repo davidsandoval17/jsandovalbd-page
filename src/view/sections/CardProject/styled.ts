@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MEDIA_BREAKPOINTS, SHADOW, TRANSITIONS } from '@theme';
+import { MEDIA_BREAKPOINTS, SHADOW, TRANSITIONS } from '@/theme';
 
 export const CardImage = styled.img`
   width: 100%;

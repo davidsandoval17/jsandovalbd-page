@@ -7,10 +7,10 @@ import {
   HiOutlineDocumentText,
   Tag,
   Typography,
-} from '@components';
-import random1 from '@assets/img/mokups/random1.png';
+} from '@/components';
+import random1 from '@/assets/img/mokups/random1.png';
 import { BackgroundBanner, ImageAnimated } from './styled';
-import configContact from '@config/contact';
+import configContact from '@/config/contact';
 import Wave from './Wave';
 import HandSlider from './HandSlider';
 import { useTranslation } from 'react-i18next';

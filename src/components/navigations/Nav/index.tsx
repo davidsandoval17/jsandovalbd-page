@@ -1,5 +1,5 @@
-import { useAppContext } from '@context';
-import { Typography, SocialNetworks } from '@components';
+import { useAppContext } from '@/context';
+import { Typography, SocialNetworks } from '@/components';
 import { Button, Container, Item, List } from './styled';
 import { useTranslation } from 'react-i18next';
 

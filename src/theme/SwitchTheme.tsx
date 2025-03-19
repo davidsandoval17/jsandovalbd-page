@@ -1,4 +1,4 @@
-import { BsFillMoonFill, BsFillSunFill } from '@components';
+import { BsFillMoonFill, BsFillSunFill } from '@/components';
 import styled, { css } from 'styled-components';
 import { useTheme } from './context';
 import { TRANSITIONS, Z_INDEX_BUTTON } from './variables';

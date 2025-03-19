@@ -1,10 +1,10 @@
-import { FiChevronDown, TbLanguage } from '@components';
-import { SHADOW, TRANSITIONS, Z_INDEX_BUTTON } from '@theme';
+import { FiChevronDown, TbLanguage } from '@/components';
+import { SHADOW, TRANSITIONS, Z_INDEX_BUTTON } from '@/theme';
 import styled, { css } from 'styled-components';
 import { CgArrowTopRight } from 'react-icons/cg';
-import { getFontWeight, getSize } from '@components/display-data/Typography';
+import { getFontWeight, getSize } from '@/components/display-data/Typography';
 import { useTranslation } from 'react-i18next';
-import { getLocalStorage, setLocalStorage } from '@utils';
+import { getLocalStorage, setLocalStorage } from '@/utils';
 
 const List = styled.div`
   position: absolute;

@@ -8,9 +8,9 @@ import {
   Section,
   SectionTitle,
   Typography,
-} from '@components';
-import Development from '@assets/img/services/desarrollo.png';
-import Design from '@assets/img/services/diseno-ui-ux.png';
+} from '@/components';
+import Development from '@/assets/img/services/desarrollo.png';
+import Design from '@/assets/img/services/diseno-ui-ux.png';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

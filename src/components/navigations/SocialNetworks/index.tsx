@@ -1,4 +1,4 @@
-import configContact from '@config/contact';
+import configContact from '@/config/contact';
 import { SocialItem } from './styled';
 
 const SocialNetworks = () => {

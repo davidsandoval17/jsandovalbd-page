@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { ViteAliases } from 'vite-aliases';
 import { VitePWA } from 'vite-plugin-pwa';
+import path from 'node:path'
 
-// https://vitejs.dev/config/
+const root = path.resolve(__dirname, 'src')
+
 export default defineConfig({
   base: '/jsandovalbd-page/',
   plugins: [
     react(),
-    ViteAliases({ useTypescript: true }),
     VitePWA({
       manifest: {
         name: 'David Page',
@@ -42,4 +42,9 @@ export default defineConfig({
       devOptions: { enabled: true },
     }),
   ],
+  resolve: {
+    alias: {
+      "@": root
+    }
+  }
 });

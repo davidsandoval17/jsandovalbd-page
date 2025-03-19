@@ -5,13 +5,13 @@ import {
   Nav,
   LogoTheme,
   SocialNetworks,
-} from '@components';
-import { useScrollDirection } from '@hooks';
+} from '@/components';
+import { useScrollDirection } from '@/hooks';
 import { HeaderButtons, HeaderWrapper } from './styled';
-import NavToggler from '@components/navigations/Nav/NavToggler';
-import { useAppContext } from '@context';
-import { SwitchTheme } from '@theme';
-import { ButtonLanguage } from '@i18n';
+import NavToggler from '@/components/navigations/Nav/NavToggler';
+import { useAppContext } from '@/context';
+import { SwitchTheme } from '@/theme';
+import { ButtonLanguage } from '@/i18n';
 import { useEffect } from 'react';
 
 const Header = () => {

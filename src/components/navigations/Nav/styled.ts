@@ -4,9 +4,9 @@ import {
   Z_INDEX_NAV,
   Z_INDEX_BUTTON,
   TRANSITIONS,
-} from '@theme';
-import { getFontWeight, getSize } from '@components/display-data/Typography';
-import activeHeader from '@assets/img/mokups/active-header.png';
+} from '@/theme';
+import { getFontWeight, getSize } from '@/components/display-data/Typography';
+import activeHeader from '@/assets/img/mokups/active-header.png';
 
 export const Container = styled.nav<{ active?: boolean }>`
   position: fixed;

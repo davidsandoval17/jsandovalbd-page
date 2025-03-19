@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MEDIA_BREAKPOINTS, RotateCenterAnimation } from '@theme';
+import { MEDIA_BREAKPOINTS, RotateCenterAnimation } from '@/theme';
 
 export const ImageAnimated = styled.div`
   width: 100%;

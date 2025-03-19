@@ -5,11 +5,11 @@ import {
   Row,
   Section,
   SectionTitle,
-} from '@components';
-import logoPandora from '@assets/logos/logo-pandora.svg';
-import logoInterfaz from '@assets/logos/logo-interfaz-light.png';
-import logoSolera from '@assets/logos/logo-solera.webp';
-import random2 from '@assets/img/mokups/random2.png';
+} from '@/components';
+import logoPandora from '@/assets/logos/logo-pandora.svg';
+import logoInterfaz from '@/assets/logos/logo-interfaz-light.png';
+import logoSolera from '@/assets/logos/logo-solera.webp';
+import random2 from '@/assets/img/mokups/random2.png';
 import { ImageAnimated, Logo } from './styled';
 import { useTranslation } from 'react-i18next';
 

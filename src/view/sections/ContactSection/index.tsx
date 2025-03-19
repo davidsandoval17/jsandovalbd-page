@@ -4,12 +4,12 @@ import {
   Section,
   SectionTitle,
   Typography,
-} from '@components';
+} from '@/components';
 import { Group, GroupIcon, GroupItem } from './styled';
-import iconGithub from '@assets/svg/brand/github.svg';
-import iconLinkedin from '@assets/svg/brand/linkedin.svg';
-import iconWhatsapp from '@assets/svg/brand/whatsapp.svg';
-import configContact from '@config/contact';
+import iconGithub from '@/assets/svg/brand/github.svg';
+import iconLinkedin from '@/assets/svg/brand/linkedin.svg';
+import iconWhatsapp from '@/assets/svg/brand/whatsapp.svg';
+import configContact from '@/config/contact';
 import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {

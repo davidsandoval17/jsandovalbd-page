@@ -1,4 +1,4 @@
-import { Typography, FiChevronDown } from '@components';
+import { Typography, FiChevronDown } from '@/components';
 import { Toggle } from './styled';
 import { FC, HtmlHTMLAttributes } from 'react';
 

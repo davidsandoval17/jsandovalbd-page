@@ -6,7 +6,7 @@ import {
   AiOutlineStar,
   Section,
   FancyBox,
-} from '@components';
+} from '@/components';
 import { useTranslation } from 'react-i18next';
 import CardProject from '../CardProject';
 import listProjects from './listProjects';

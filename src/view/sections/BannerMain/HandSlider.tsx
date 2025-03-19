@@ -1,8 +1,8 @@
-import handMobile from '@assets/img/mokups/hand-mobile-2.png';
-import adaraProject from '@assets/img/projects/adara.jpg';
-import bernardoProject from '@assets/img/projects/bernardo.jpg';
-import sweetFruitProject from '@assets/img/projects/sweetfruit.jpg';
-import agroclubProject from '@assets/img/projects/agroclub.jpg';
+import handMobile from '@/assets/img/mokups/hand-mobile-2.png';
+import adaraProject from '@/assets/img/projects/adara.jpg';
+import bernardoProject from '@/assets/img/projects/bernardo.jpg';
+import sweetFruitProject from '@/assets/img/projects/sweetfruit.jpg';
+import agroclubProject from '@/assets/img/projects/agroclub.jpg';
 import { HandImage, SliderBanner } from './styled';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

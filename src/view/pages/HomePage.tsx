@@ -1,4 +1,4 @@
-import { DefaultLayout } from '@view/layouts';
+import { DefaultLayout } from '@/view/layouts';
 import {
   BannerMain,
   ContactSection,
@@ -6,7 +6,7 @@ import {
   ServicesSection,
   TecnologiesSection,
   WorkOnSection,
-} from '@view/sections';
+} from '@/view/sections';
 
 const HomePage = () => {
   return (

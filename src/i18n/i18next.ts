@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { getLocalStorage } from '@utils';
+import { getLocalStorage } from '@/utils';
 import { initReactI18next } from 'react-i18next';
 import localeEs from './locales/es';
 import localeEn from './locales/en';

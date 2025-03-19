@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MEDIA_BREAKPOINTS, TRANSITIONS } from '@theme';
+import { MEDIA_BREAKPOINTS, TRANSITIONS } from '@/theme';
 
 export const Group = styled.div`
   display: flex;

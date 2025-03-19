@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { MEDIA_BREAKPOINTS, RotateCenterAnimation, SHADOW } from '@theme';
+import { MEDIA_BREAKPOINTS, RotateCenterAnimation, SHADOW } from '@/theme';
 
 export const BackgroundImg = styled.div`
   position: absolute;

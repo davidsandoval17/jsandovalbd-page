@@ -1,4 +1,4 @@
-import { Z_INDEX_PRELOADER } from '@theme';
+import { Z_INDEX_PRELOADER } from '@/theme';
 import styled, { css, keyframes } from 'styled-components';
 
 export const Animation = keyframes`
