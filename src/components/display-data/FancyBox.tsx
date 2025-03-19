@@ -1,6 +1,7 @@
 import { FC, ReactNode, useEffect, useRef } from 'react';
-import { Fancybox as NativeFancybox } from '@fancyapps/ui/dist/fancybox.esm.js';
-import '@fancyapps/ui/dist/fancybox.css';
+import { Fancybox as NativeFancybox } from '@fancyapps/ui';
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 
 type FancyboxProps = {
   delegate?: any;
