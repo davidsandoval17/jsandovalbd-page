@@ -25,9 +25,13 @@ export const HandImage = styled.div`
   position: relative;
   text-align: center;
 
-  img {
+  > img {
     height: 100%;
     object-fit: contain;
+    mask-image: linear-gradient(
+      black 80%,
+      transparent
+    );
   }
 
   ${MEDIA_BREAKPOINTS.tablet} {

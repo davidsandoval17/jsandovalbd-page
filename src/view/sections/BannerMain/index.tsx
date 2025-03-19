@@ -30,20 +30,12 @@ const BannerMain = () => {
             <Tag
               label={t('bannerMain.title.tag')}
               size='sm'
-              data-aos='fade-right'
-              // data-aos-delay={2500}
-              // data-aos-duration={1500}
-              // data-aos-once={true}
             />
             <Typography
               as='h1'
               size='4xl'
               color='headline-1'
               className='my-3 my-md-4'
-              data-aos='fade-right'
-              // data-aos-delay={2600}
-              // data-aos-duration={1500}
-              // data-aos-once={true}
             >
               {t('bannerMain.title.headline.presentation')}
               <br />
@@ -65,20 +57,11 @@ const BannerMain = () => {
                 />
               </Typography>
             </Typography>
-            <Typography
-              data-aos='fade-right'
-              // data-aos-delay={2700}
-              // data-aos-duration={1500}
-              // data-aos-once={true}
-            >
+            <Typography>
               {t('bannerMain.paragraph')}
             </Typography>
             <div
-              className='mt-5'
-              // data-aos='fade-right'
-              // data-aos-delay={2800}
-              // data-aos-duration={1500}
-              // data-aos-once={true}
+              className='mt-5 d-flex flex-column gap-3 flex-sm-row justify-content-center justify-content-lg-start'
             >
               <Button
                 as='a'
@@ -90,7 +73,7 @@ const BannerMain = () => {
               >
                 {t('bannerMain.button')} <SiGmail />
               </Button>
-              <Button as='a' variant='outlined' className='ms-2 rounded-pill'  href='pdf/cv-david-sandoval-2023.pdf' target='_blank'>
+              <Button as='a' variant='outlined' className='rounded-pill'  href='pdf/cv-david-sandoval-2023.pdf' target='_blank'>
                 <HiOutlineDocumentText /> Curriculum
               </Button>
             </div>
