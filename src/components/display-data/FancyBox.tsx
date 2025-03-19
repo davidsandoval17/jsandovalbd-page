@@ -1,4 +1,4 @@
-import { FC, ReactNode, useEffect } from 'react';
+import { FC, ReactNode, useEffect, useRef } from 'react';
 import { Fancybox as NativeFancybox } from '@fancyapps/ui/dist/fancybox.esm.js';
 import '@fancyapps/ui/dist/fancybox.css';
 
@@ -7,20 +7,24 @@ type FancyboxProps = {
   options?: any;
   children: ReactNode;
 };
-const Fancybox: FC<FancyboxProps> = ({ delegate, options, children }) => {
-  const del = delegate || '[data-fancybox]';
+const Fancybox: FC<FancyboxProps> = (props) => {
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    const opts = options || {};
+    const container = containerRef.current;
 
-    NativeFancybox.bind(del, opts);
+    const delegate = props.delegate || "[data-fancybox]";
+    const options = props.options || {};
+
+    NativeFancybox.bind(container, delegate, options);
 
     return () => {
-      NativeFancybox.destroy();
+      NativeFancybox.unbind(container);
+      NativeFancybox.close();
     };
-  }, []);
+  });
 
-  return <>{children}</>;
+  return <div ref={containerRef}>{props.children}</div>;
 };
 
 export default Fancybox;
