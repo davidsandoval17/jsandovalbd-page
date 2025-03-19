@@ -14,8 +14,8 @@ dependencies:
     specifier: ^4.0.0
     version: 4.0.0
   i18next:
-    specifier: ^22.0.5
-    version: 22.0.5
+    specifier: ^24.2.3
+    version: 24.2.3(typescript@5.8.2)
   polished:
     specifier: ^4.2.2
     version: 4.2.2
@@ -32,8 +32,8 @@ dependencies:
     specifier: ^6.1.0
     version: 6.1.0(react@19.0.0)
   react-i18next:
-    specifier: ^12.0.0
-    version: 12.0.0(i18next@22.0.5)(react-dom@19.0.0)(react@19.0.0)
+    specifier: ^15.4.1
+    version: 15.4.1(i18next@24.2.3)(react-dom@19.0.0)(react@19.0.0)
   react-icons:
     specifier: ^4.6.0
     version: 4.6.0(react@19.0.0)
@@ -3338,10 +3338,16 @@ packages:
       void-elements: 3.1.0
     dev: false
 
-  /i18next@22.0.5:
-    resolution: {integrity: sha512-N2AXKCLHzv1ClfLqiwbAPJHClovfRv9iplySiZ/S3LfQ7PNjkVEkVpFbhCXDsPhQd6kLp6DKjbzpowniE8Mdiw==}
+  /i18next@24.2.3(typescript@5.8.2):
+    resolution: {integrity: sha512-lfbf80OzkocvX7nmZtu7nSTNbrTYR52sLWxPtlXX1zAhVw8WEnFk4puUkCR4B1dNQwbSpEHHHemcZu//7EcB7A==}
+    peerDependencies:
+      typescript: ^5
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@babel/runtime': 7.26.10
+      typescript: 5.8.2
     dev: false
 
   /idb@7.1.1:
@@ -4148,10 +4154,10 @@ packages:
       react-side-effect: 2.1.2(react@19.0.0)
     dev: false
 
-  /react-i18next@12.0.0(i18next@22.0.5)(react-dom@19.0.0)(react@19.0.0):
-    resolution: {integrity: sha512-/O7N6aIEAl1FaWZBNvhdIo9itvF/MO/nRKr9pYqRc9LhuC1u21SlfwpiYQqvaeNSEW3g3qUXLREOWMt+gxrWbg==}
+  /react-i18next@15.4.1(i18next@24.2.3)(react-dom@19.0.0)(react@19.0.0):
+    resolution: {integrity: sha512-ahGab+IaSgZmNPYXdV1n+OYky95TGpFwnKRflX/16dY04DsYYKHtVLjeny7sBSCREEcoMbAgSkFiGLF5g5Oofw==}
     peerDependencies:
-      i18next: '>= 19.0.0'
+      i18next: '>= 23.2.3'
       react: '>= 16.8.0'
       react-dom: '*'
       react-native: '*'
@@ -4163,7 +4169,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.26.10
       html-parse-stringify: 3.0.1
-      i18next: 22.0.5
+      i18next: 24.2.3(typescript@5.8.2)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     dev: false
@@ -4841,7 +4847,6 @@ packages:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /typewriter-effect@2.19.0(react-dom@19.0.0)(react@19.0.0):
     resolution: {integrity: sha512-rhUX1ukmAXNFWUnMFx8CDU1uLWJQ7pRYzDU7WfHJRq43i6SmWSP9vFiUsOGfXINodUAgZiJ5xnzwLciHxZDGDg==}
