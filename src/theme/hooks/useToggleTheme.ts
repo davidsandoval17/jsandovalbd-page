@@ -1,16 +1,28 @@
 import { dark, light } from '../mode';
 import { setLocalStorage } from '../../utils';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DefaultTheme } from 'styled-components';
 
+const getSystemTheme = () => {
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? dark
+    : light;
+};
+
 const useToggleTheme = () => {
-  const [theme, setTheme] = useState<DefaultTheme>(dark);
+  const [theme, setTheme] = useState<DefaultTheme>(getSystemTheme());
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = () => setTheme(mediaQuery.matches ? dark : light);
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   const toggleTheme = () => {
     const currentTheme = theme.mode === 'light' ? dark : light;
-    // set localstorage
     setLocalStorage('theme', currentTheme);
-    // set state
     setTheme(currentTheme);
   };
 
