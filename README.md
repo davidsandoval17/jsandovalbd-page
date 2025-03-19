@@ -2,27 +2,48 @@
 
 ![Isotipo - David](/david-front-back.jpg)
 
-## :pencil2: Description
+## 📝 Description
 
-This page is made with the purpose of showing my projects to the world and demonstrating my abilities in the development of web applications with one of the most demanded frameworks, also web pages with manageable wordpress.
+Welcome to my personal web portfolio! This website showcases my projects, skills, and expertise in web application development using cutting-edge technologies. It features modern frameworks and tools, including dynamic web pages with WordPress CMS.
 
-## :star2: App Features
+## 🌟 Features
 
-- Spanish and English translation
-- Theme in dark and light mode
-- Image gallery
-- PWA
+✅ Multilingual support (Spanish & English)
 
-## :wrench: Used Tecnologies
+✅ Dark & light theme modes
 
-- React 18
-- React Icons
-- React i18next
-- Fancybox
-- Wavify
-- Typewriter Effect
-- Swiper 8
-- Styled Components
-- Bootstrap 5
-- Gh Pages
-- AOS
+✅ Interactive image gallery
+
+✅ Progressive Web App (PWA) for offline usage
+
+## 🛠️ Technologies Used
+
+- ⚛️ React 19 - Modern UI library
+
+- 🎨 Styled Components 6 - CSS-in-JS for styling
+
+- 🌍 React i18next - Internationalization support
+
+- 🎭 AOS - Scroll animations
+
+- 📦 React Icons - Extensive icon library
+
+- 📸 Fancybox - Image lightbox functionality
+
+- 🎵 Wavify - SVG wave animations
+
+- ⌨️ Typewriter Effect - Typing animation effect
+
+- 🏄‍♂️ Swiper 11 - Interactive slider
+
+- 🎨 Bootstrap 5 - Responsive design framework
+
+- 🚀 GH Pages - Deployment via GitHub Pages
+
+---
+
+🔗 Live Demo: [Insert your website link here]
+
+📬 Contact: [Insert your contact details here]
+
+✨ Feel free to explore my projects and connect with me!
