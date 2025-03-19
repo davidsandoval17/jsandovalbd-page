@@ -70,7 +70,7 @@ const BannerMain = () => {
                 as='a'
                 variant='outlined'
                 className='rounded-pill'
-                href='pdf/cv-david-sandoval-2023.pdf'
+                href='pdf/cv-david-sandoval-2025.pdf'
                 target='_blank'
               >
                 <HiOutlineDocumentText /> Curriculum
