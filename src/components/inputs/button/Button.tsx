@@ -2,9 +2,9 @@ import { darken } from 'polished';
 import styled, { css, DefaultTheme } from 'styled-components';
 import { Color } from '@/theme/styled';
 
-export type VariantButton = 'contained' | 'outlined' | 'text' | undefined;
+export type VariantButton = 'contained' | 'outlined' | 'text';
 
-export type SizeButton = 'sm' | 'md' | 'lg' | 'icon' | undefined;
+export type SizeButton = 'sm' | 'md' | 'lg' | 'icon';
 
 type ButtonProps = {
   variant?: VariantButton;

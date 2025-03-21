@@ -3,7 +3,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import GlobalStyles from '../globalStyles';
 import { ThemeContext, useTheme } from './ThemeContext';
 import useToggleTheme from '../hooks/useToggleTheme';
-import { getLocalStorage } from '../../utils';
+import { getLocalStorage } from '@/utils';
 
 const ThemeStyledComponent: FC<{
   children: ReactNode;
