@@ -15,14 +15,6 @@ export default createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  #__next {
-    min-height: 100vh;
-
-    @media print {
-      background: white;
-    }
-  }
-
   ${({ theme }) => css`
     body {
       margin: 0;
@@ -34,7 +26,7 @@ export default createGlobalStyle`
       font-family: ${theme.fonts.fontPrimary};
       position: relative;
 
-      &::-webkit-scrollbar {
+      /* &::-webkit-scrollbar {
         width: 12px;
       }
 
@@ -49,7 +41,7 @@ export default createGlobalStyle`
 
       &::-webkit-scrollbar-track {
         background-color: ${theme.colors['background-1']};
-      }
+      } */
     }
 
     a {

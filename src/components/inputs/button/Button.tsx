@@ -1,23 +1,28 @@
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 import styled, { css, DefaultTheme } from 'styled-components';
 import { Color } from '@/theme/styled';
+import { system, SystemProps } from '@/theme';
 
 export type VariantButton = 'contained' | 'outlined' | 'text';
 
-export type SizeButton = 'sm' | 'md' | 'lg' | 'icon';
+export type SizeButton = 'sm' | 'md' | 'lg';
 
-type ButtonProps = {
+export interface ButtonStyledProps extends SystemProps {
   variant?: VariantButton;
   size?: SizeButton;
-  color?: Color;
+  $color?: Color;
   fullWidth?: boolean;
-};
+}
 
-const variantStyles = (
-  theme: DefaultTheme,
-  variant: VariantButton = 'text',
-  color: Color = 'primary',
-) =>
+const variantStyles = ({
+  theme,
+  variant = 'text',
+  color = 'primary',
+}: {
+  theme: DefaultTheme;
+  variant?: VariantButton;
+  color?: Color;
+}) =>
   ({
     contained: css`
       background: ${theme.colors[color]};
@@ -26,6 +31,10 @@ const variantStyles = (
       &:hover {
         background: ${darken(0.07, theme.colors[color])};
         color: white;
+      }
+
+      &:active {
+        background: ${darken(0.3, theme.colors[color])};
       }
     `,
     outlined: css`
@@ -37,33 +46,63 @@ const variantStyles = (
         background: ${theme.colors[color]};
         color: white;
       }
+
+      &:active {
+        background: ${lighten(0.1, theme.colors[color])};
+      }
     `,
-    text: css``,
+    text: css`
+      background: transparent;
+      color: ${theme.colors[color]};
+
+      &:hover {
+        background: ${lighten(0.3, theme.colors[color])};
+      }
+
+      &:active {
+        background: ${lighten(0.27, theme.colors[color])};
+      }
+    `,
   })[variant];
 
-const sizeStyles = (size: SizeButton = 'md') =>
+const sizeStyles = ({ size = 'md' }: { size?: SizeButton }) =>
   ({
     sm: css`
-      padding: 0.35rem 0.7rem;
-      font-size: 0.75rem;
+      height: 2.25rem;
+      padding-inline: 1rem;
+      line-height: 1.75rem;
+      font-size: 12px;
       gap: 0.25rem;
+
+      & > svg {
+        font-size: 16px;
+      }
     `,
     md: css`
-      padding: 12px 26px;
-      gap: 0.75rem;
-      font-size: 1rem;
+      height: 2.75rem;
+      padding-inline: 1.25rem;
+      line-height: 2.75rem;
+      font-size: 14px;
+      gap: 0.5rem;
+
+      & > svg {
+        font-size: 18px;
+      }
     `,
     lg: css`
-      padding: 0.5rem 1.3rem;
-      font-size: 1.25rem;
-      gap: 1rem;
-    `,
-    icon: css`
-      padding: 0.5rem;
+      height: 3.25rem;
+      padding-inline: 1.5rem;
+      line-height: 3.25rem;
+      font-size: 18px;
+      gap: 0.5rem;
+
+      & > svg {
+        font-size: 20px;
+      }
     `,
   })[size];
 
-export default styled.button<ButtonProps>`
+const Button = styled.button<ButtonStyledProps>`
   border-style: none;
   display: inline-flex;
   align-items: center;
@@ -71,10 +110,19 @@ export default styled.button<ButtonProps>`
   justify-content: center;
   transition: 0.3s ease-in-out;
   text-decoration: none;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
 
-  ${({ theme, color, variant }) => variantStyles(theme, variant, color)}
+  &:disabled {
+    opacity: 0.75;
+    pointer-events: none;
+  }
 
-  ${({ size }) => sizeStyles(size)}
+  ${({ theme, $color, variant }) =>
+    variantStyles({ theme, variant, color: $color })}
+
+  ${({ size }) => sizeStyles({ size })}
 
   ${({ fullWidth }) =>
     fullWidth &&
@@ -82,4 +130,12 @@ export default styled.button<ButtonProps>`
       display: flex;
       width: 100%;
     `}
+
+  ${system}
 `;
+
+Button.defaultProps = {
+  size: 'md',
+};
+
+export default Button;

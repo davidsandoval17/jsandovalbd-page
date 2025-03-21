@@ -59,17 +59,13 @@ const BannerMain = () => {
               <Button
                 as='a'
                 href={`mailto:${configContact.gmail}`}
-                className='rounded-pill'
                 variant='contained'
-                color='brand-500'
-                size='md'
               >
                 {t('bannerMain.button')} <SiGmail />
               </Button>
               <Button
                 as='a'
                 variant='outlined'
-                className='rounded-pill'
                 href='pdf/cv-david-sandoval-2025.pdf'
                 target='_blank'
               >
