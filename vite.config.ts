@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { VitePWA } from 'vite-plugin-pwa';
+// import { VitePWA } from 'vite-plugin-pwa';
 import path from 'node:path';
 
 const root = path.resolve(__dirname, 'src');
@@ -9,38 +9,38 @@ export default defineConfig({
   base: '/jsandovalbd-page/',
   plugins: [
     react(),
-    VitePWA({
-      manifest: {
-        name: 'David Page',
-        short_name: 'David Page',
-        background_color: '#111827',
-        theme_color: '#111827',
-        icons: [
-          {
-            src: 'icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'icon-256x256.png',
-            sizes: '256x256',
-            type: 'image/png',
-          },
-          {
-            src: 'icon-384x384.png',
-            sizes: '384x384',
-            type: 'image/png',
-          },
-          {
-            src: 'icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
-      injectRegister: 'auto',
-      devOptions: { enabled: true },
-    }),
+    // VitePWA({
+    //   manifest: {
+    //     name: 'David Page',
+    //     short_name: 'David Page',
+    //     background_color: '#111827',
+    //     theme_color: '#111827',
+    //     icons: [
+    //       {
+    //         src: 'icon-192x192.png',
+    //         sizes: '192x192',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: 'icon-256x256.png',
+    //         sizes: '256x256',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: 'icon-384x384.png',
+    //         sizes: '384x384',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: 'icon-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png',
+    //       },
+    //     ],
+    //   },
+    //   injectRegister: 'auto',
+    //   devOptions: { enabled: true },
+    // }),
   ],
   resolve: {
     alias: {
