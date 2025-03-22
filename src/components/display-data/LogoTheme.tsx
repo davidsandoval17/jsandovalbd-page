@@ -1,6 +1,7 @@
 import styled, { useTheme } from 'styled-components';
 import configMain from '@/config/main';
 import { system, SystemProps } from '@/theme';
+import { HtmlHTMLAttributes } from 'react';
 
 const LogoThemeContent = styled.a<SystemProps>`
   display: inline-block;
@@ -18,7 +19,9 @@ const LogoThemeContent = styled.a<SystemProps>`
   ${system}
 `;
 
-const LogoTheme = ({ ...props }: SystemProps) => {
+const LogoTheme = ({
+  ...props
+}: SystemProps & HtmlHTMLAttributes<HTMLAnchorElement>) => {
   const theme = useTheme();
 
   return (
