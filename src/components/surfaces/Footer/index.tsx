@@ -5,6 +5,7 @@ import {
   SocialNetworks,
   LogoTheme,
   Typography,
+  Stack,
 } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { FooterBackground } from './styled';
@@ -15,22 +16,16 @@ const Footer = () => {
   return (
     <FooterBackground>
       <Container>
-        <Row className='align-items-center g-4'>
-          <Col xs={12} lg={3} className='text-center text-lg-start'>
-            <LogoTheme />
-          </Col>
-          <Col xs={12} lg={6}>
-            <Typography
-              size='xs'
-              weight='semibold'
-              className='text-center'
-              dangerouslySetInnerHTML={{ __html: t('copy') }}
-            />
-          </Col>
-          <Col xs={12} lg={3} className='text-center text-lg-end'>
-            <SocialNetworks />
-          </Col>
-        </Row>
+        <Stack flexDirection='column' alignItems='center'>
+          <LogoTheme width='auto' />
+          <Typography
+            size='xs'
+            weight='semibold'
+            className='text-center'
+            dangerouslySetInnerHTML={{ __html: t('copy') }}
+          />
+          <SocialNetworks />
+        </Stack>
       </Container>
     </FooterBackground>
   );

@@ -1,7 +1,8 @@
 import styled, { useTheme } from 'styled-components';
 import configMain from '@/config/main';
+import { system, SystemProps } from '@/theme';
 
-const LogoThemeContent = styled.a`
+const LogoThemeContent = styled.a<SystemProps>`
   display: inline-block;
   width: 100%;
   height: 40px;
@@ -13,9 +14,11 @@ const LogoThemeContent = styled.a`
     object-fit: contain;
     object-position: left;
   }
+
+  ${system}
 `;
 
-const LogoTheme = ({ ...props }) => {
+const LogoTheme = ({ ...props }: SystemProps) => {
   const theme = useTheme();
 
   return (
