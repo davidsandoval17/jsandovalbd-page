@@ -4,6 +4,7 @@ import GlobalStyles from '../globalStyles';
 import { ThemeContext, useTheme } from './ThemeContext';
 import useToggleTheme from '../hooks/useToggleTheme';
 import { getLocalStorage } from '@/utils';
+import Reset from '../reset';
 
 const ThemeStyledComponent: FC<{
   children: ReactNode;
@@ -11,6 +12,7 @@ const ThemeStyledComponent: FC<{
   const { theme } = useTheme();
   return (
     <StyledThemeProvider theme={theme}>
+      <Reset />
       <GlobalStyles />
       {children}
     </StyledThemeProvider>

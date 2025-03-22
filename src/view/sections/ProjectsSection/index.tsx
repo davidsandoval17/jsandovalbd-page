@@ -29,8 +29,8 @@ const ProjectsSection = () => {
           <Row className='g-1 mt-5'>
             {listProjects.map((project, i) => (
               <Col
-                md={6}
-                lg={4}
+                sm={6}
+                md={4}
                 key={project.id}
                 data-aos='fade-up'
                 data-aos-duration={800}
