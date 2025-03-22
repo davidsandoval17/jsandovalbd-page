@@ -2,6 +2,6 @@ export * from './variables';
 export * from './mode';
 export * from './context';
 export * from './animations';
+export * from './system';
 export { default as SwitchTheme } from './SwitchTheme';
 export { default as GlobalStyles } from './globalStyles';
-export * from './system';
