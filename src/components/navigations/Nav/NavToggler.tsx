@@ -1,8 +1,10 @@
 import { ButtonHTMLAttributes, FC } from 'react';
 import { useAppContext } from '@/context';
-import { Toggler, TogglerIcon } from './styled';
+import { Toggler, TogglerIcon } from './Nav.styled';
+import { SystemProps } from '@/theme';
 
-type NavTogglerProps = {} & ButtonHTMLAttributes<HTMLButtonElement>;
+type NavTogglerProps = {} & ButtonHTMLAttributes<HTMLButtonElement> &
+  SystemProps;
 
 const NavToggler: FC<NavTogglerProps> = ({ ...props }) => {
   const { openNav, toggleOpenNav } = useAppContext();

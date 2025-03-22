@@ -10,7 +10,6 @@ export interface SwitchThemeStyledProps extends SystemProps {
 const Switch = styled.button<SwitchThemeStyledProps>`
   position: relative;
   cursor: pointer;
-  z-index: ${Z_INDEX_BUTTON};
   width: 40px;
   height: 22px;
   padding: 0;

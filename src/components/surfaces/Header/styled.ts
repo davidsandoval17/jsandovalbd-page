@@ -26,7 +26,7 @@ export const HeaderWrapper = styled.header<{
   z-index: ${Z_INDEX_HEADER};
   position: sticky;
   width: 100%;
-  transition: ${TRANSITIONS.base};
+  transition: top ${TRANSITIONS.base};
   background: ${({ theme }) => rgba(theme.colors.body, 0.5)};
   backdrop-filter: blur(40px);
 

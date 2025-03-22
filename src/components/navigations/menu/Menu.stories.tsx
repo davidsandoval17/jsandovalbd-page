@@ -7,10 +7,10 @@ const meta = {
   component: Menu,
   args: {
     controlLabel: 'Language',
-    optionActive: 1,
+    optionActive: 'english',
     options: [
       {
-        id: 'inglish',
+        id: 'english',
         label: 'Inglés',
       },
       {

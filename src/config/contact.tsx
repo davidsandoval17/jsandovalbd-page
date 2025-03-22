@@ -1,8 +1,8 @@
 import { SiGmail, FaLinkedinIn, FaGithub, BsWhatsapp } from '@/components';
 
 const whatsapp = {
-  string: '+51 973 140 063',
-  number: 973140063,
+  string: '+51 936 537 537',
+  number: 936537537,
 };
 
 const gmail = 'jsandovalbd1993@gmail.com';

@@ -5,24 +5,28 @@ import {
   Nav,
   LogoTheme,
   SocialNetworks,
+  Stack,
+  SwitchTheme,
+  NavToggler,
 } from '@/components';
 import { useScrollDirection } from '@/hooks';
 import { HeaderButtons, HeaderWrapper } from './styled';
-import NavToggler from '@/components/navigations/Nav/NavToggler';
 import { useAppContext } from '@/context';
-import { SwitchTheme } from '@/theme';
+import { useTheme, Z_INDEX_BUTTON } from '@/theme';
 import { ButtonLanguage } from '@/i18n';
 import { useEffect } from 'react';
 
 const Header = () => {
   const { openNav } = useAppContext();
   const scrollDirection = useScrollDirection();
+  const { isThemeLight, toggleTheme } = useTheme();
 
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, 1000);
   }, []);
+
   return (
     <HeaderWrapper
       id='header'
@@ -31,28 +35,32 @@ const Header = () => {
       fixed={openNav}
     >
       <Container>
-        <Row className='align-items-center'>
-          <Col xs={2} sm={3} className='d-md-none'>
-            <NavToggler className='d-md-none' />
+        <Row alignItems='center'>
+          <Col xs={7} md={3}>
+            <Stack>
+              <NavToggler className='d-md-none' />
+              <LogoTheme style={{ zIndex: 300 }} />
+            </Stack>
           </Col>
-          <Col xs={6} md={3} lg={2} className='text-center text-md-start'>
-            <LogoTheme style={{ zIndex: 300 }} />
-          </Col>
-          <Col xs={4} sm={3} md={9} lg={10}>
-            <div className='d-flex align-items-center justify-content-end'>
+          <Col xs={5} md={9}>
+            <Stack justifyContent='flex-end'>
               <Nav />
               <HeaderButtons>
                 <div>
                   <ButtonLanguage />
                 </div>
                 <div>
-                  <SwitchTheme />
+                  <SwitchTheme
+                    active={!isThemeLight}
+                    onClick={toggleTheme}
+                    zIndex={Z_INDEX_BUTTON}
+                  />
                 </div>
                 <div className='d-none d-lg-inline-block'>
                   <SocialNetworks />
                 </div>
               </HeaderButtons>
-            </div>
+            </Stack>
           </Col>
         </Row>
       </Container>

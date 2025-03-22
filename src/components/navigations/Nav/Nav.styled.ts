@@ -4,6 +4,8 @@ import {
   Z_INDEX_NAV,
   Z_INDEX_BUTTON,
   TRANSITIONS,
+  system,
+  SystemProps,
 } from '@/theme';
 import { getFontWeight, getSize } from '@/components/display-data/Typography';
 import activeHeader from '@/assets/img/mokups/active-header.png';
@@ -19,8 +21,8 @@ export const Container = styled.nav<{ active?: boolean }>`
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s ease-in-out;
   padding: 6rem 1rem 1rem;
+  /* transition: 0.3s ease-in-out; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -108,7 +110,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Toggler = styled.button`
+export const Toggler = styled.button<SystemProps>`
   border-style: none;
   padding: 0;
   position: relative;
@@ -116,6 +118,8 @@ export const Toggler = styled.button`
   width: 22px;
   background: transparent;
   z-index: ${Z_INDEX_BUTTON};
+
+  ${system}
 `;
 
 export const TogglerIcon = styled.span<{ active?: boolean }>`

@@ -1,6 +1,6 @@
 import { useAppContext } from '@/context';
 import { Typography, SocialNetworks } from '@/components';
-import { Button, Container, Item, List } from './styled';
+import { Button, Container, Item, List } from './Nav.styled';
 import { useTranslation } from 'react-i18next';
 
 const Nav = () => {

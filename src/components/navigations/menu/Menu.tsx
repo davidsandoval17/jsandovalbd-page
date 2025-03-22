@@ -4,8 +4,12 @@ import { SystemProps } from '@/theme';
 
 export interface MenuProps extends SystemProps {
   controlLabel: string | ReactNode;
-  options: Array<{ label: string | ReactNode; id: string }>;
-  optionActive?: number;
+  options: Array<{
+    label: string | ReactNode;
+    id: string;
+    onSelect?: () => void;
+  }>;
+  optionActive?: string;
 }
 
 function Menu({ options, controlLabel, optionActive, ...props }: MenuProps) {
@@ -14,8 +18,12 @@ function Menu({ options, controlLabel, optionActive, ...props }: MenuProps) {
       {controlLabel}
       {options.length > 0 && (
         <MenuList>
-          {options.map((opt, i) => (
-            <MenuItem key={opt.id} active={optionActive === i}>
+          {options.map(opt => (
+            <MenuItem
+              key={opt.id}
+              active={optionActive === opt.id}
+              onClick={opt.onSelect}
+            >
               {opt.label}
             </MenuItem>
           ))}
