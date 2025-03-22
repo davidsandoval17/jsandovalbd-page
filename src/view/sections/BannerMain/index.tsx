@@ -66,7 +66,7 @@ const BannerMain = () => {
               <Button
                 as='a'
                 variant='outlined'
-                href='pdf/cv-david-sandoval-2025.pdf'
+                href='https://docs.google.com/document/d/1m1wuWSS309PRY7Hfp_C-4A7_rNtf_tSQOorJsffuaaA/edit?usp=sharing'
                 target='_blank'
               >
                 <HiOutlineDocumentText /> Curriculum
