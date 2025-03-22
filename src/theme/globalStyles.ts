@@ -1,4 +1,4 @@
-import { darken, lighten } from 'polished';
+import { darken } from 'polished';
 import { createGlobalStyle, css } from 'styled-components';
 
 export default createGlobalStyle`
@@ -25,23 +25,6 @@ export default createGlobalStyle`
       color: ${theme.colors.text};
       font-family: ${theme.fonts.fontPrimary};
       position: relative;
-
-      /* &::-webkit-scrollbar {
-        width: 12px;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        border-radius: 9px;
-        background-color: ${theme.colors['background-2']};
-
-        /* &:hover {
-          background-color: ${lighten(0.15, theme.colors['background-1'])};
-        } */
-      }
-
-      &::-webkit-scrollbar-track {
-        background-color: ${theme.colors['background-1']};
-      } */
     }
 
     a {
