@@ -35,7 +35,7 @@ const ContactSection = () => {
             rel='noreferre'
           >
             <GroupIcon>
-              <img src={iconLinkedin} width={45} height={45} />
+              <img src={iconLinkedin} width={45} height={45} alt='Linkedin' />
             </GroupIcon>
             <div>
               <Typography size='2xl' color='headline-1'>
@@ -52,7 +52,7 @@ const ContactSection = () => {
             rel='noreferre'
           >
             <GroupIcon>
-              <img src={iconGithub} width={45} height={45} />
+              <img src={iconGithub} width={45} height={45} alt='Github' />
             </GroupIcon>
             <div>
               <Typography size='2xl' color='headline-1'>
@@ -69,7 +69,7 @@ const ContactSection = () => {
             rel='noreferre'
           >
             <GroupIcon>
-              <img src={iconWhatsapp} width={45} height={45} />
+              <img src={iconWhatsapp} width={45} height={45} alt='Whatsapp' />
             </GroupIcon>
             <div>
               <Typography size='2xl' color='headline-1'>

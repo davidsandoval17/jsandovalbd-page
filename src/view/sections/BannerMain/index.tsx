@@ -7,6 +7,7 @@ import {
   HiOutlineDocumentText,
   Tag,
   Typography,
+  BsWhatsapp,
 } from '@/components';
 import random1 from '@/assets/img/mokups/random1.png';
 import { BackgroundBanner, ImageAnimated } from './styled';
@@ -22,7 +23,7 @@ const BannerMain = () => {
   return (
     <BackgroundBanner id='inicio'>
       <ImageAnimated>
-        <img src={random1} />
+        <img src={random1} alt='' />
       </ImageAnimated>
       <Container>
         <Row className='align-items-center g-5'>
@@ -58,11 +59,19 @@ const BannerMain = () => {
             <div className='mt-5 d-flex flex-column gap-3 flex-sm-row justify-content-center justify-content-lg-start'>
               <Button
                 as='a'
+                href={configContact.socialNetworks[3].url}
+                variant='contained'
+                target='_blank'
+              >
+                <BsWhatsapp /> Whatsapp
+              </Button>
+              {/* <Button
+                as='a'
                 href={`mailto:${configContact.gmail}`}
                 variant='contained'
               >
                 {t('bannerMain.button')} <SiGmail />
-              </Button>
+              </Button> */}
               <Button
                 as='a'
                 variant='outlined'

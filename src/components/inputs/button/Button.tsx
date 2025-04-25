@@ -1,7 +1,7 @@
 import { darken, lighten } from 'polished';
-import styled, { css, DefaultTheme } from 'styled-components';
-import { Color } from '@/theme/styled';
-import { system, SystemProps } from '@/theme';
+import styled, { css, type DefaultTheme } from 'styled-components';
+import type { Color } from '@/theme/styled';
+import { system, type SystemProps } from '@/theme';
 
 export type VariantButton = 'contained' | 'outlined' | 'text';
 
@@ -38,13 +38,13 @@ const variantStyles = ({
       }
     `,
     outlined: css`
-      border: 1px solid ${theme.colors[color]};
+      border: 1px solid ${theme.mode === 'dark' ? 'white' : theme.colors[color]};
       background: transparent;
-      color: ${theme.colors[color]};
+      color: ${theme.mode === 'dark' ? 'white' : theme.colors[color]};
 
       &:hover {
-        background: ${theme.colors[color]};
-        color: white;
+        background: ${theme.mode === 'dark' ? 'white' : theme.colors[color]};
+        color: ${theme.mode === 'dark' ? theme.colors[color] : 'white'};
       }
 
       &:active {
